@@ -506,6 +506,65 @@
       }
     }
   </style>
+
+  <style id="unipilot-premium-design-system">
+    :root {
+      --accent-hex:#8b5cf6; --accent-rgb:139 92 246; --accent-glow:rgba(139,92,246,.22);
+      --bg-primary:#080b14; --bg-secondary:#0d1220; --bg-card:rgba(17,23,39,.88);
+      --bg-elevated:rgba(24,31,51,.94); --border-subtle:rgba(148,163,184,.11);
+      --border-accent:rgba(167,139,250,.30); --surface-soft:rgba(255,255,255,.025);
+      --surface-hover:rgba(148,163,184,.075); --text-primary:#f4f3ff; --text-muted:#929bb0;
+      color-scheme:dark;
+    }
+    body.theme-charcoal{--bg-primary:#080b14;--bg-secondary:#0d1220;--bg-card:rgba(17,23,39,.88);--bg-elevated:rgba(24,31,51,.94);--border-subtle:rgba(148,163,184,.11)}
+    html{background:var(--bg-primary);scroll-behavior:smooth}
+    body{background:var(--bg-primary)!important;color:var(--text-primary);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:-.008em;background-image:radial-gradient(ellipse at 12% 0%,rgba(124,58,237,.075),transparent 34%),radial-gradient(ellipse at 100% 100%,rgba(79,70,229,.045),transparent 38%)!important}
+    #sidebar{background:rgba(10,14,25,.96)!important;border-color:rgba(148,163,184,.10)!important;box-shadow:12px 0 40px rgba(0,0,0,.12);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+    #sidebar>div:first-child{min-height:78px;border-color:rgba(148,163,184,.10)!important;padding-top:18px;padding-bottom:18px}
+    #sidebar>div:first-child img{filter:saturate(.88)}
+    #sidebarNav{padding:16px 12px 20px!important;display:flex;flex-direction:column;gap:15px!important}
+    .sidebar-nav-group{display:flex;flex-direction:column;gap:3px;min-width:0}
+    .sidebar-group-label{padding:0 12px 7px;color:#68738b;font-size:9px;font-weight:750;letter-spacing:.16em;text-transform:uppercase}
+    .sidebar-nav-item{min-height:39px;border:1px solid transparent!important;border-radius:10px!important;padding:9px 12px!important;gap:11px!important;color:#929bb0!important;font-size:12px!important;letter-spacing:0!important}
+    .sidebar-nav-item svg{opacity:.82;transition:color .18s ease,opacity .18s ease}
+    .sidebar-nav-item:hover{background:rgba(148,163,184,.065)!important;color:#f4f3ff!important;border-color:rgba(148,163,184,.06)!important}
+    .sidebar-nav-item.nav-item-active{background:linear-gradient(90deg,rgba(139,92,246,.18),rgba(139,92,246,.065))!important;border:1px solid rgba(167,139,250,.19)!important;border-left:1px solid rgba(167,139,250,.19)!important;color:#eee9ff!important;box-shadow:inset 2px 0 0 #a78bfa,0 5px 16px rgba(0,0,0,.12)}
+    .sidebar-nav-item.nav-item-active svg{color:#c4b5fd!important;opacity:1}
+    #sidebar>div:last-child{border-color:rgba(148,163,184,.10)!important;padding:12px!important}
+    #sidebar>div:last-child>div{background:rgba(255,255,255,.035)!important;border-color:rgba(148,163,184,.10)!important;border-radius:13px!important}
+    main{min-width:0;background:transparent}
+    main>.no-print.hidden.lg\:flex{background:rgba(8,11,20,.78)!important;border-color:rgba(148,163,184,.10)!important;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);padding-top:15px!important;padding-bottom:15px!important}
+    #appContent{padding-top:30px!important;padding-bottom:34px!important}
+    .glass-card{background:linear-gradient(145deg,rgba(20,27,45,.91),rgba(14,19,33,.92))!important;border:1px solid rgba(148,163,184,.115)!important;border-radius:17px!important;box-shadow:0 10px 28px rgba(0,0,0,.16),inset 0 1px 0 rgba(255,255,255,.025)!important;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+    .glass-card-hover:hover{transform:translateY(-2px);border-color:rgba(167,139,250,.26)!important;box-shadow:0 16px 34px rgba(0,0,0,.22),0 0 0 1px rgba(139,92,246,.045)!important}
+    .btn-accent{background:linear-gradient(135deg,#8b5cf6,#7550db)!important;color:#fff!important;border:1px solid rgba(196,181,253,.20)!important;border-radius:11px!important;box-shadow:0 5px 16px rgba(109,40,217,.22)!important;font-weight:650;transition:transform .16s ease,filter .16s ease,box-shadow .16s ease}
+    .btn-accent:hover{filter:brightness(1.08);transform:translateY(-1px);box-shadow:0 8px 22px rgba(109,40,217,.28)!important}
+    .btn-accent:active{transform:translateY(0)}
+    .nav-item-active{border-radius:10px}
+    .input-field,input:not([type=checkbox]):not([type=radio]):not([type=file]),select,textarea{accent-color:#a78bfa}
+    .input-field{background:rgba(7,11,21,.72)!important;border:1px solid rgba(148,163,184,.16)!important;border-radius:10px!important;color:#f4f3ff!important;min-height:40px;transition:border-color .16s ease,box-shadow .16s ease,background .16s ease}
+    .input-field:focus,input:focus,select:focus,textarea:focus{outline:none;border-color:rgba(167,139,250,.68)!important;box-shadow:0 0 0 3px rgba(139,92,246,.13)!important}
+    select option{background:#111827;color:#f4f3ff}
+    button{transition:background-color .16s ease,border-color .16s ease,color .16s ease,transform .16s ease}
+    button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #a78bfa!important;outline-offset:2px}
+    .rounded-2xl,.rounded-3xl{border-radius:17px!important}
+    .border-slate-800,.border-slate-800\/60,.border-slate-800\/70,.border-slate-800\/80,.border-slate-800\/90{border-color:rgba(148,163,184,.105)!important}
+    .bg-slate-900,.bg-slate-900\/75,.bg-slate-900\/80,.bg-slate-900\/85,.bg-slate-900\/90{background-color:rgba(9,14,26,.72)!important}
+    .bg-slate-800,.bg-slate-800\/70,.bg-slate-800\/80,.bg-slate-800\/90{background-color:rgba(31,39,59,.72)!important}
+    .text-accent{color:#b9a5ff!important}
+    .module-enter{animation:upIn .24s cubic-bezier(.2,.7,.2,1) both}
+    @keyframes upIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+    .glass-card svg{max-width:100%}
+    table{border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:12px}
+    th{color:#c7cce0}
+    ::selection{background:rgba(139,92,246,.34);color:#fff}
+    #mobileMenuBtn,.bnav-btn{border-radius:11px}
+    body>nav.lg\:hidden{background:rgba(9,13,25,.96)!important;border-color:rgba(148,163,184,.12)!important;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+    @media(max-width:1023px){#sidebar{width:min(86vw,310px)!important;max-width:310px}#appContent{padding:20px 14px 30px!important}main{padding-bottom:76px!important}body>nav.lg\:hidden{padding-top:8px!important;padding-bottom:max(8px,env(safe-area-inset-bottom))!important}}
+    @media(max-width:640px){.glass-card{border-radius:14px!important}.module-enter.space-y-6{gap:16px}.text-2xl{line-height:1.22}.sidebar-nav-item{min-height:42px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+  </style>
+
 </head>
 <body class="min-h-screen flex flex-col lg:flex-row selection:bg-accent/30 selection:text-white">
 
@@ -639,7 +698,7 @@
     const IDB_STORE = 'pdf_documents';
 
     const ACCENT_PRESETS = [
-      { name: 'Royal Indigo', hex: '#6366f1', rgb: '99 102 241' },
+      { name: 'Royal Violet', hex: '#8b5cf6', rgb: '139 92 246' },
       { name: 'Electric Violet', hex: '#8b5cf6', rgb: '139 92 246' },
       { name: 'Emerald Mint', hex: '#10b981', rgb: '16 185 129' },
       { name: 'Cyber Cyan', hex: '#06b6d4', rgb: '6 182 212' },
@@ -678,7 +737,7 @@
           currentSemesterId: 'sem_1'
         },
         preferences: {
-          accentHex: '#6366f1',
+          accentHex: '#8b5cf6',
           surfaceTheme: 'navy',
           sidebarCollapsed: false,
           remindersEnabled: true,
@@ -1129,16 +1188,29 @@
 
     function renderSidebar() {
       const nav = document.getElementById('sidebarNav');
-      nav.innerHTML = NAV_ITEMS.map(item => {
+      const groups = [
+        { title: 'Workspace', ids: ['dashboard'] },
+        { title: 'Academics', ids: ['gpa', 'assessments', 'targets', 'analytics'] },
+        { title: 'Planning', ids: ['timetable', 'calendar', 'tasks', 'attendance', 'study', 'exams', 'habits'] },
+        { title: 'Learning', ids: ['notes', 'pdfreader', 'flashcards'] },
+        { title: 'Preferences', ids: ['settings', 'about'] }
+      ];
+      const rendered = new Set();
+      const button = item => {
         const active = currentModule === item.id;
-        return `
-          <button onclick="navigateTo('${item.id}')"
-            class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-medium transition-all ${active ? 'nav-item-active font-semibold' : 'text-slate-400 hover:text-white hover:bg-slate-800/60'}">
-            <svg class="w-4 h-4 shrink-0 ${active ? 'text-accent' : ''}" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">${item.icon}</svg>
-            <span class="sidebar-label truncate">${item.label}</span>
-          </button>
-        `;
-      }).join('');
+        rendered.add(item.id);
+        return `<button type="button" onclick="navigateTo('${item.id}')" aria-current="${active ? 'page' : 'false'}" title="${item.label}"
+          class="sidebar-nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-medium transition-all ${active ? 'nav-item-active font-semibold' : 'text-slate-400 hover:text-white hover:bg-slate-800/60'}">
+          <svg class="w-[18px] h-[18px] shrink-0 ${active ? 'text-accent' : ''}" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">${item.icon}</svg>
+          <span class="sidebar-label truncate">${item.label}</span>
+        </button>`;
+      };
+      nav.innerHTML = groups.map(group => {
+        const items = NAV_ITEMS.filter(item => group.ids.includes(item.id));
+        if (!items.length) return '';
+        items.forEach(item => rendered.add(item.id));
+        return `<section class="sidebar-nav-group"><div class="sidebar-group-label sidebar-label">${group.title}</div>${items.map(button).join('')}</section>`;
+      }).join('') + NAV_ITEMS.filter(item => !rendered.has(item.id)).map(button).join('');
 
       document.querySelectorAll('.bnav-btn').forEach(btn => {
         const isAct = btn.dataset.bnav === currentModule;
@@ -4832,6 +4904,122 @@
 
 </script>
 <script>
+/* UniPilot Student Learning Pack: spaced-repetition flashcards + daily habit tracker.
+   Additive only: data is stored in appState and follows the existing backup/restore flow. */
+(() => {
+  'use strict';
+  const iconFlash = '<path stroke-linecap="round" stroke-linejoin="round" d="M4 5.5A2.5 2.5 0 016.5 3H20v15H6.5A2.5 2.5 0 014 15.5v-10zM4 15.5A2.5 2.5 0 016.5 13H20M8 7h8M8 10h5"/>';
+  const iconHabit = '<path stroke-linecap="round" stroke-linejoin="round" d="M5 3v3m14-3v3M4 8h16M5 5h14a1 1 0 011 1v13H4V6a1 1 0 011-1zm3 8l2 2 5-5"/>';
+  if (!NAV_ITEMS.some(x => x.id === 'flashcards')) NAV_ITEMS.push({ id: 'flashcards', label: 'Flashcards & Recall', icon: iconFlash });
+  if (!NAV_ITEMS.some(x => x.id === 'habits')) NAV_ITEMS.push({ id: 'habits', label: 'Study Habits', icon: iconHabit });
+
+  appState.flashcards = Array.isArray(appState.flashcards) ? appState.flashcards : [];
+  appState.habits = Array.isArray(appState.habits) ? appState.habits : [];
+  let activeDeck = 'All decks';
+  let reviewQueue = [];
+  let reviewIndex = 0;
+  let reviewRevealed = false;
+  let reviewSessionCount = 0;
+
+  const hEsc = v => escapeHtml(String(v ?? ''));
+  const today = () => localDateISO();
+  const dayMs = 86400000;
+  const parseDay = value => { const [y,m,d] = String(value || '').split('-').map(Number); return y && m && d ? new Date(y,m-1,d).getTime() : NaN; };
+  const daysBetween = (a,b) => Math.round((parseDay(b)-parseDay(a))/dayMs);
+  const datePlus = (date,n) => { const d = new Date(parseDay(date)); d.setDate(d.getDate()+n); return localDateISO(d); };
+  const decks = () => [...new Set(appState.flashcards.map(c => c.deck || 'General'))].sort((a,b)=>a.localeCompare(b));
+  const dueCards = () => appState.flashcards.filter(c => !c.nextReview || c.nextReview <= today());
+  const cardById = id => appState.flashcards.find(c => c.id === id);
+  const action = (label, fn, cls='') => `<button type="button" onclick="${fn}" class="text-xs font-semibold ${cls || 'text-accent'} hover:underline">${label}</button>`;
+
+  function flashcardForm(id='') {
+    const card = id ? cardById(id) : null;
+    openModal(`<h3 class="text-lg font-bold text-white mb-4">${card ? 'Edit' : 'Create'} flashcard</h3>
+      <form onsubmit="saveUniFlashcard(event,'${hEsc(id)}')" class="space-y-3">
+        <label class="block text-xs text-slate-400">Deck / course<input name="deck" required maxlength="60" class="input-field mt-1" value="${hEsc(card?.deck || (activeDeck !== 'All decks' ? activeDeck : 'General'))}" placeholder="e.g. BIO 101"></label>
+        <label class="block text-xs text-slate-400">Question / front<textarea name="front" required maxlength="2000" rows="3" class="input-field mt-1" placeholder="Write a question, definition or concept">${hEsc(card?.front || '')}</textarea></label>
+        <label class="block text-xs text-slate-400">Answer / back<textarea name="back" required maxlength="4000" rows="4" class="input-field mt-1" placeholder="Write the answer or explanation">${hEsc(card?.back || '')}</textarea></label>
+        <div class="flex justify-end gap-2 pt-2"><button type="button" onclick="closeModal()" class="px-4 py-2 text-slate-400">Cancel</button><button class="btn-accent rounded-xl px-4 py-2">Save flashcard</button></div>
+      </form>`, 'max-w-2xl');
+  }
+  window.openUniFlashcardForm = flashcardForm;
+  window.saveUniFlashcard = (event,id='') => {
+    event.preventDefault(); const f = new FormData(event.target);
+    const deck = String(f.get('deck')||'').trim(), front = String(f.get('front')||'').trim(), back = String(f.get('back')||'').trim();
+    if (!deck || !front || !back) { showToast('Complete the deck, question and answer fields.', 'error'); return; }
+    const old = id ? cardById(id) : null;
+    const record = old ? {...old, deck, front, back} : { id: uid('fc'), deck, front, back, createdAt: today(), nextReview: today(), interval: 0, ease: 2.5, reps: 0, reviews: 0 };
+    if (old) appState.flashcards = appState.flashcards.map(c=>c.id===id?record:c); else appState.flashcards.push(record);
+    activeDeck = deck; saveState(); closeModal(); renderCurrentModule(); showToast(old ? 'Flashcard updated.' : 'Flashcard added.');
+  };
+  window.deleteUniFlashcard = id => { if (!cardById(id) || !confirm('Delete this flashcard and its review schedule?')) return; appState.flashcards=appState.flashcards.filter(c=>c.id!==id); saveState(); renderCurrentModule(); showToast('Flashcard deleted.','info'); };
+  window.setUniFlashDeck = deck => { activeDeck=deck; renderCurrentModule(); };
+  window.startUniFlashReview = () => {
+    const pool = dueCards().filter(c=>activeDeck==='All decks'||(c.deck||'General')===activeDeck);
+    reviewQueue = pool.map(c=>c.id); reviewIndex=0; reviewRevealed=false; reviewSessionCount=0;
+    renderCurrentModule();
+  };
+  window.revealUniFlashAnswer = () => { reviewRevealed=true; renderCurrentModule(); };
+  window.rateUniFlashcard = rating => {
+    const card = cardById(reviewQueue[reviewIndex]); if (!card) return;
+    const oldInterval = Math.max(0, Number(card.interval)||0);
+    if (rating === 'again') { card.interval=0; card.reps=0; card.ease=Math.max(1.3,(Number(card.ease)||2.5)-0.2); card.nextReview=today(); }
+    else if (rating === 'hard') { card.interval=Math.max(1,Math.round((oldInterval||1)*1.2)); card.reps=(Number(card.reps)||0)+1; card.ease=Math.max(1.3,(Number(card.ease)||2.5)-0.15); card.nextReview=datePlus(today(),card.interval); }
+    else if (rating === 'good') { card.interval=oldInterval===0?1:Math.max(2,Math.round(oldInterval*(Number(card.ease)||2.5))); card.reps=(Number(card.reps)||0)+1; card.nextReview=datePlus(today(),card.interval); }
+    else { card.interval=oldInterval===0?3:Math.max(3,Math.round(oldInterval*(Number(card.ease)||2.5)*1.3)); card.reps=(Number(card.reps)||0)+1; card.ease=Math.min(3.2,(Number(card.ease)||2.5)+0.1); card.nextReview=datePlus(today(),card.interval); }
+    card.reviews=(Number(card.reviews)||0)+1; card.lastReviewed=today(); reviewSessionCount++;
+    reviewIndex++; reviewRevealed=false; saveState(); renderCurrentModule();
+  };
+
+  function renderFlashcards() {
+    const all = activeDeck==='All decks' ? appState.flashcards : appState.flashcards.filter(c=>(c.deck||'General')===activeDeck);
+    const due = dueCards().filter(c=>activeDeck==='All decks'||(c.deck||'General')===activeDeck).length;
+    const mastered = all.filter(c=>Number(c.interval)>=21).length;
+    const isReview = reviewQueue.length > 0;
+    const current = isReview ? cardById(reviewQueue[reviewIndex]) : null;
+    const deckOptions = ['All decks',...decks()].map(d=>`<option value="${hEsc(d)}" ${activeDeck===d?'selected':''}>${hEsc(d)}</option>`).join('');
+    const top = `<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="text-xl sm:text-2xl font-bold text-white">Flashcards & Active Recall</h2><p class="text-xs text-slate-400 mt-1">Build memory with short reviews that return at spaced intervals.</p></div><button onclick="openUniFlashcardForm()" class="btn-accent rounded-xl px-4 py-2.5 text-xs font-semibold">＋ Create flashcard</button></div>`;
+    if (isReview && current) {
+      return `<div class="max-w-3xl mx-auto space-y-5 module-enter">${top}<div class="flex items-center justify-between text-xs text-slate-400"><span>Review session · ${reviewIndex+1} of ${reviewQueue.length}</span><span>${reviewSessionCount} reviewed this session</span></div><div class="h-1.5 rounded-full bg-slate-800 overflow-hidden"><div class="h-full bg-accent rounded-full" style="width:${(reviewIndex/reviewQueue.length)*100}%"></div></div><section class="glass-card rounded-3xl p-6 sm:p-10 min-h-[280px] flex flex-col justify-center text-center"><p class="text-[10px] uppercase tracking-[.2em] text-accent font-bold">${hEsc(current.deck||'General')} · ${reviewRevealed?'Answer':'Question'}</p><div class="text-lg sm:text-2xl font-semibold text-white leading-relaxed whitespace-pre-wrap mt-6">${hEsc(reviewRevealed?current.back:current.front)}</div>${!reviewRevealed?'<button onclick="revealUniFlashAnswer()" class="btn-accent rounded-xl px-6 py-3 mt-8 self-center">Show answer</button>':'<p class="text-xs text-slate-500 mt-7">How well did you recall it?</p><div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-4"><button onclick="rateUniFlashcard(\'again\')" class="rounded-xl border border-rose-500/30 bg-rose-500/10 text-rose-300 py-3 text-xs font-semibold">Again <small class="block opacity-70">Review today</small></button><button onclick="rateUniFlashcard(\'hard\')" class="rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-300 py-3 text-xs font-semibold">Hard <small class="block opacity-70">Short interval</small></button><button onclick="rateUniFlashcard(\'good\')" class="rounded-xl border border-emerald-500/30 bg-emerald-500/10 text-emerald-300 py-3 text-xs font-semibold">Good <small class="block opacity-70">Normal interval</small></button><button onclick="rateUniFlashcard(\'easy\')" class="rounded-xl border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 py-3 text-xs font-semibold">Easy <small class="block opacity-70">Longer interval</small></button></div>'}</section><div class="text-center">${action('End review', 'endUniFlashReview()', 'text-slate-400')}</div></div>`;
+    }
+    if (reviewQueue.length && reviewIndex>=reviewQueue.length) {
+      const completed=reviewSessionCount; reviewQueue=[]; reviewIndex=0;
+      return `<div class="max-w-2xl mx-auto space-y-5 module-enter">${top}<section class="glass-card rounded-3xl p-8 text-center"><div class="text-4xl mb-3">✦</div><h3 class="text-2xl font-bold text-white">Review complete</h3><p class="text-sm text-slate-400 mt-2">You reviewed ${completed} card(s). Keep coming back to strengthen long-term recall.</p><button onclick="startUniFlashReview()" class="btn-accent rounded-xl px-5 py-2.5 mt-6">Review remaining cards</button></section></div>`;
+    }
+    const rows = all.slice().sort((a,b)=>(a.nextReview||'').localeCompare(b.nextReview||'')).map(c=>`<article class="rounded-xl border border-slate-800 bg-slate-900/50 p-3"><div class="flex justify-between gap-3"><div class="min-w-0"><p class="text-[10px] uppercase tracking-wider text-accent">${hEsc(c.deck||'General')}</p><p class="text-sm text-white mt-1 whitespace-pre-wrap">${hEsc(c.front)}</p><p class="text-xs text-slate-500 mt-2">Next review: ${hEsc(c.nextReview||'Today')} · ${Number(c.reviews)||0} reviews</p></div><div class="flex gap-3 shrink-0">${action('Edit',`openUniFlashcardForm('${c.id}')`)}${action('Delete',`deleteUniFlashcard('${c.id}')`,'text-rose-400')}</div></div></article>`).join('');
+    return `<div class="space-y-5 module-enter">${top}<section class="grid grid-cols-2 sm:grid-cols-4 gap-3"><div class="glass-card rounded-2xl p-4"><p class="text-xs text-slate-500">Cards in deck</p><b class="text-2xl text-white">${all.length}</b></div><div class="glass-card rounded-2xl p-4"><p class="text-xs text-slate-500">Due today</p><b class="text-2xl text-amber-300">${due}</b></div><div class="glass-card rounded-2xl p-4"><p class="text-xs text-slate-500">Long-term</p><b class="text-2xl text-emerald-300">${mastered}</b><p class="text-[10px] text-slate-500">21+ day interval</p></div><div class="glass-card rounded-2xl p-4"><p class="text-xs text-slate-500">Total reviews</p><b class="text-2xl text-white">${all.reduce((n,c)=>n+(Number(c.reviews)||0),0)}</b></div></section><section class="glass-card rounded-2xl p-4 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between"><label class="text-xs text-slate-400 flex items-center gap-2">Deck<select onchange="setUniFlashDeck(this.value)" class="input-field min-w-[170px]">${deckOptions}</select></label><button onclick="startUniFlashReview()" ${due?'':'disabled'} class="btn-accent rounded-xl px-5 py-2.5 text-xs font-semibold disabled:opacity-40">Start review · ${due} due</button></section><div class="flex items-center justify-between"><h3 class="font-bold text-white">Your cards</h3><span class="text-xs text-slate-500">${all.length} total</span></div>${rows?`<div class="grid grid-cols-1 lg:grid-cols-2 gap-3">${rows}</div>`:`<div class="glass-card rounded-2xl p-8 text-center"><p class="text-white font-semibold">Your first deck starts here</p><p class="text-xs text-slate-400 mt-2">Create flashcards from lecture notes, definitions, formulas and past questions.</p><button onclick="openUniFlashcardForm()" class="btn-accent rounded-xl px-4 py-2 mt-4 text-xs">Create first card</button></div>`}<p class="text-[11px] text-slate-500">Scheduling is stored locally on this device. Use your UniPilot backup to move flashcards and review progress to another device.</p></div>`;
+  }
+  window.endUniFlashReview = () => { reviewQueue=[]; reviewIndex=0; reviewRevealed=false; renderCurrentModule(); };
+
+  function habitStreak(habit) {
+    const set=new Set(habit.completedDates||[]); let cursor=today();
+    if (!set.has(cursor)) cursor=datePlus(cursor,-1);
+    let streak=0; while(set.has(cursor) && streak<3660){streak++;cursor=datePlus(cursor,-1);} return streak;
+  }
+  function habitForm() {
+    openModal(`<h3 class="text-lg font-bold text-white mb-4">Create a study habit</h3><form onsubmit="saveUniHabit(event)" class="space-y-3"><label class="block text-xs text-slate-400">Habit name<input name="name" required maxlength="70" class="input-field mt-1" placeholder="e.g. Review lecture notes"></label><label class="block text-xs text-slate-400">Weekly target<select name="target" class="input-field mt-1">${[1,2,3,4,5,6,7].map(n=>`<option value="${n}" ${n===5?'selected':''}>${n} day(s) per week</option>`).join('')}</select></label><div class="flex justify-end gap-2"><button type="button" onclick="closeModal()" class="px-4 py-2 text-slate-400">Cancel</button><button class="btn-accent rounded-xl px-4 py-2">Create habit</button></div></form>`);
+  }
+  window.openUniHabitForm=habitForm;
+  window.saveUniHabit=event=>{event.preventDefault();const f=new FormData(event.target),name=String(f.get('name')||'').trim(),target=Math.max(1,Math.min(7,Number(f.get('target'))||5));if(!name)return;appState.habits.push({id:uid('habit'),name,target,createdAt:today(),completedDates:[]});saveState();closeModal();renderCurrentModule();showToast('Study habit created.');};
+  window.toggleUniHabit=id=>{const h=appState.habits.find(x=>x.id===id);if(!h)return;const d=today(),set=new Set(h.completedDates||[]);if(set.has(d))set.delete(d);else set.add(d);h.completedDates=[...set].sort();saveState();renderCurrentModule();};
+  window.deleteUniHabit=id=>{if(!confirm('Delete this habit and its check-in history?'))return;appState.habits=appState.habits.filter(h=>h.id!==id);saveState();renderCurrentModule();showToast('Habit deleted.','info');};
+  function renderHabits(){
+    const d=today(),start=datePlus(d,-((new Date().getDay()+6)%7)),week=Array.from({length:7},(_,i)=>datePlus(start,i));
+    const checkedToday=appState.habits.filter(h=>(h.completedDates||[]).includes(d)).length;
+    const totalWeek=appState.habits.reduce((n,h)=>n+(h.completedDates||[]).filter(x=>x>=start&&x<=d).length,0);
+    const cards=appState.habits.map(h=>{const set=new Set(h.completedDates||[]),weekCount=week.filter(x=>set.has(x)).length,done=set.has(d),streak=habitStreak(h),progress=Math.min(100,weekCount/Math.max(1,Number(h.target)||5)*100);return `<article class="glass-card rounded-2xl p-4 space-y-3"><div class="flex items-start justify-between gap-3"><div class="min-w-0"><h3 class="font-semibold text-white">${hEsc(h.name)}</h3><p class="text-xs text-slate-500 mt-1">${streak} day streak · ${weekCount}/${h.target||5} days this week</p></div><div class="flex gap-3">${action('Delete',`deleteUniHabit('${h.id}')`,'text-rose-400')}</div></div><div class="grid grid-cols-7 gap-1.5">${week.map((date,i)=>`<div class="text-center"><p class="text-[9px] text-slate-500 mb-1">${['M','T','W','T','F','S','S'][i]}</p><div class="h-8 rounded-lg flex items-center justify-center text-[10px] ${set.has(date)?'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30':'bg-slate-900 text-slate-600 border border-slate-800'}">${set.has(date)?'✓':String(new Date(parseDay(date)).getDate())}</div></div>`).join('')}</div><div class="h-1.5 rounded-full bg-slate-800 overflow-hidden"><div class="h-full bg-accent rounded-full" style="width:${progress}%"></div></div><div class="flex items-center justify-between gap-2"><span class="text-[10px] text-slate-500">Weekly goal progress · ${Math.round(progress)}%</span><button onclick="toggleUniHabit('${h.id}')" class="rounded-xl px-3 py-2 text-xs font-semibold ${done?'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30':'btn-accent'}">${done?'✓ Done today · Undo':'Check in today'}</button></div></article>`;}).join('');
+    return `<div class="space-y-5 module-enter"><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="text-xl sm:text-2xl font-bold text-white">Study Habits</h2><p class="text-xs text-slate-400 mt-1">Build a consistent routine through small daily check-ins.</p></div><button onclick="openUniHabitForm()" class="btn-accent rounded-xl px-4 py-2.5 text-xs font-semibold">＋ Add habit</button></div><section class="grid grid-cols-2 sm:grid-cols-3 gap-3"><div class="glass-card rounded-2xl p-4"><p class="text-xs text-slate-500">Habits tracked</p><b class="text-2xl text-white">${appState.habits.length}</b></div><div class="glass-card rounded-2xl p-4"><p class="text-xs text-slate-500">Completed today</p><b class="text-2xl text-emerald-300">${checkedToday}/${appState.habits.length}</b></div><div class="glass-card rounded-2xl p-4 col-span-2 sm:col-span-1"><p class="text-xs text-slate-500">Check-ins this week</p><b class="text-2xl text-white">${totalWeek}</b></div></section>${cards?`<div class="grid grid-cols-1 xl:grid-cols-2 gap-3">${cards}</div>`:`<div class="glass-card rounded-2xl p-8 text-center"><h3 class="font-semibold text-white">Start with one small habit</h3><p class="text-xs text-slate-400 mt-2">Examples: revise for 20 minutes, solve five problems, read one lecture section or review flashcards.</p><button onclick="openUniHabitForm()" class="btn-accent rounded-xl px-4 py-2 mt-4 text-xs">Create your first habit</button></div>`}<p class="text-[11px] text-slate-500">Your check-ins are private and stored in this browser. Streaks are based on consecutive local calendar days.</p></div>`;
+  }
+
+  const previousRender=window.renderCurrentModule;
+  window.renderCurrentModule=function(){
+    if(currentModule==='flashcards'){const box=document.getElementById('appContent');if(box)box.innerHTML=renderFlashcards();updateGlobalChrome();return;}
+    if(currentModule==='habits'){const box=document.getElementById('appContent');if(box)box.innerHTML=renderHabits();updateGlobalChrome();return;}
+    return previousRender.apply(this,arguments);
+  };
+})();
+</script>
+<script>
 /* UniPilot identity layer: developer profile and app identity. */
 (() => {
   'use strict';
@@ -4868,7 +5056,7 @@
             <h3 class="text-lg font-bold text-white">Built to support your academic journey</h3>
             <p class="text-sm leading-7 text-slate-400">UniPilot brings academic planning and progress tracking together in one place. Use it to manage courses, monitor grades, plan study sessions, organise deadlines, track attendance and keep learning materials close at hand.</p>
             <div class="grid grid-cols-2 gap-2 pt-1">
-              ${['GPA & CGPA tracking','CA and grade management','Attendance monitoring','Academic calendar','Study planning','PDF study library'].map(x => '<div class="rounded-xl bg-slate-900/60 border border-slate-800 p-3 text-xs text-slate-300"><span class="text-cyan-300 mr-2">✦</span>' + x + '</div>').join('')}
+              ${['GPA & CGPA tracking','CA and grade management','Attendance monitoring','Academic calendar','Study planning','PDF study library','Spaced-repetition flashcards','Study habit tracking'].map(x => '<div class="rounded-xl bg-slate-900/60 border border-slate-800 p-3 text-xs text-slate-300"><span class="text-cyan-300 mr-2">✦</span>' + x + '</div>').join('')}
             </div>
           </div>
         </div>
