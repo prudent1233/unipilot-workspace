@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.unipilot.app",
+      "sha256_cert_fingerprints": [
+        "B8:91:86:38:83:6A:0F:C0:40:6F:40:D4:62:ED:F6:6A:DB:4A:7E:3B:53:70:B8:C2:DA:E1:08:06:E8:E7:1B:2E"
+      ]
+    }
+  }
+]
